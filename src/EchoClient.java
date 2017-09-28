@@ -18,7 +18,6 @@ public final class EchoClient {
           
             OutputStream os = socket.getOutputStream();
             PrintStream out = new PrintStream(os, true, "UTF-8");
-          // PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         	System.out.print("<Client>: "); 
             BufferedReader svin= new BufferedReader(new InputStreamReader(System.in));
